@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -24,3 +28,36 @@ a {
     background: black;
   }
 }
+
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  padding : 15px 20px; 
+  font-size: 1.3rem; 
+  border-bottom: 2px solid white; 
+}
+
+nav > ul {
+  display: flex; 
+  gap: 20px;
+}
+
+nav > ul > li {
+  border: 2px solid white; 
+  border-radius: 15px;
+  padding: 10px; 
+  transition: 500ms;
+}
+
+nav > ul > li:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer; 
+}
+
+
